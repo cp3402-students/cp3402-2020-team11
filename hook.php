@@ -67,6 +67,7 @@ $payload = json_decode($json);
 switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
     case 'ping':
         echo 'pong';
+        exec('cd '.$stageURI. ';sudo git pull');
         //echo $payload->{'zen'};
         break;
 
@@ -75,7 +76,7 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
         switch ($payload->{'action'}){
             case 'opened':
             case 'closed':
-                shell_exec('cd '.$stageURI.' && git pull');
+                exec('cd '.$stageURI. ';sudo git pull');
                 break;
 
         }
