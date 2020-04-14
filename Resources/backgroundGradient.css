@@ -1,0 +1,6 @@
+/*Gradient for background images.*/
+
+:root{
+background: rgb(1,168,148);
+background: linear-gradient(0deg, rgba(1,168,148,1) 0%, rgba(245,174,24,1) 12%, rgba(232,74,37,1) 57%, rgba(124,51,19,1) 100%);
+}
