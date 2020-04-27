@@ -1,0 +1,31 @@
+/*Colour palette*/
+
+:root{
+  /*Black - (text)*/
+  --black: #332208 ;
+
+  /*Brown - (shadow)*/
+  --brown: #7c3313;
+
+  /*Light Brown - (menu)*/
+  --lightBrown: #c75f38;
+
+  /*Red - (headings)*/
+  --red: #e84a25;
+
+  /*Teal -  (titles)*/
+  --teal: #01a894;
+
+  /*Yellow -  (links)*/
+  --yellow: #f5ae18;
+
+  /*Cream - (forms)*/
+  --cream: #fdebc5;
+}
+
+/*Gradient for background images.*/
+
+:root{
+  background: rgb(1,168,148);
+  background: linear-gradient(0deg, rgba(1,168,148,1) 0%, rgba(245,174,24,1) 12%, rgba(232,74,37,1) 57%, rgba(124,51,19,1) 100%);
+}

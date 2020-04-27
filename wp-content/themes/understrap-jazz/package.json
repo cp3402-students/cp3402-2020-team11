@@ -1,0 +1,31 @@
+{
+  "name": "understrap-jazz",
+  "version": "0.0.1",
+  "description": "Jazz Child Theme for UnderStrap Theme",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cp3402-students/cp3402-2020-team11.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "framework",
+    "bootstrap",
+    "understrap"
+  ],
+  "author": "cp3402-2020-team11",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/cp3402-students/cp3402-2020-team11/issues"
+  },
+  "homepage": "https://understrap.com",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "understrap": "^0.9.1"
+  }
+}
