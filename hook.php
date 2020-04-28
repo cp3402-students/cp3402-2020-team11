@@ -73,7 +73,7 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
 
     //https://developer.github.com/v3/activity/events/types/#pullrequestevent
     case 'pull_request':
-        switch ($payload->{'action'}){
+        switch ($payload->{'state'}){
             case 'opened':
             case 'closed':
                 exec('cd '.$stageURI. ';sudo git pull');
