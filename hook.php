@@ -67,16 +67,17 @@ $payload = json_decode($json);
 switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
     case 'ping':
         echo 'pong';
-        exec('cd '.$stageURI. ';sudo git pull');
+        exec('cd '.$stageURI. ';git pull');
         //echo $payload->{'zen'};
         break;
 
     //https://developer.github.com/v3/activity/events/types/#pullrequestevent
     case 'pull_request':
-        switch ($payload->{'state'}){
+        switch ($payload->{'action'}){
             case 'opened':
             case 'closed':
-                exec('cd '.$stageURI. ';sudo git pull');
+                echo 'pull request closed updating repo';
+                exec('cd '.$stageURI. ';git pull');
                 break;
 
         }
