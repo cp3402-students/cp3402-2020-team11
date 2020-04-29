@@ -59,9 +59,9 @@ defined('ABSPATH') || exit;
                     'walker' => new Jazz_Walker(),
                 )
             ); ?>
+            <?php endif; ?>
         </div>
     </nav><!-- .site-navigation -->
-    <?php endif; ?>
 </div>
 <!-- #header-navbar end -->
 
