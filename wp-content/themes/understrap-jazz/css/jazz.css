@@ -2265,7 +2265,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   border-top: 1px solid #e9ecef; }
 
-.dropdown-item {
+.dropdown-item, .dropdown-item-odd, .dropdown-item-even {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -2276,15 +2276,15 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
-  .dropdown-item:hover, .dropdown-item:focus {
+  .dropdown-item:hover, .dropdown-item-odd:hover, .dropdown-item-even:hover, .dropdown-item:focus, .dropdown-item-odd:focus, .dropdown-item-even:focus {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa; }
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active, .active.dropdown-item-odd, .active.dropdown-item-even, .dropdown-item:active, .dropdown-item-odd:active, .dropdown-item-even:active {
     color: #fff;
     text-decoration: none;
     background-color: #007bff; }
-  .dropdown-item.disabled, .dropdown-item:disabled {
+  .dropdown-item.disabled, .disabled.dropdown-item-odd, .disabled.dropdown-item-even, .dropdown-item:disabled, .dropdown-item-odd:disabled, .dropdown-item-even:disabled {
     color: #6c757d;
     pointer-events: none;
     background-color: transparent; }
@@ -7134,10 +7134,10 @@ a.skip-link {
   background: #01a894;
   background: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%); }
 
-.menu-item-odd {
+.dropdown-item-odd {
   background-color: white;
-  text-decoration-color: var(--black); }
+  color: var(--black); }
 
-.menu-item-even {
+.dropdown-item-even {
   background-color: var(--black);
-  text-decoration-color: white; }
+  color: white; }

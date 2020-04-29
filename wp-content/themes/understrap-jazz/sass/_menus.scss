@@ -1,10 +1,12 @@
 
-.menu-item-odd {
+.dropdown-item-odd {
+  @extend .dropdown-item;
   background-color: white;
-  text-decoration-color: var(--black);
+  color: var(--black);
 }
 
-.menu-item-even {
+.dropdown-item-even {
+  @extend .dropdown-item;
   background-color: var(--black);
-  text-decoration-color: white;
+  color: white;
 }
