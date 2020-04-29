@@ -7,6 +7,7 @@
  */
 
 $stageURI = '/var/www/html/stage/';
+$themeURI = '/wp-content/themes/understrap-jazz';
 $prodURI = '/var/www/html/prod';
 
 
@@ -77,7 +78,7 @@ switch (strtolower($_SERVER['HTTP_X_GITHUB_EVENT'])) {
             case 'opened':
             case 'closed':
                 echo 'pull request closed updating repo';
-                exec('cd '.$stageURI. ';git pull');
+                exec('cd '.$stageURI. ';git pull;cd '.$themeURI.';npm install');
                 break;
 
         }
