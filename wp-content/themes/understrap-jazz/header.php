@@ -11,19 +11,34 @@ defined( 'ABSPATH' ) || exit;
     <?php wp_head(); ?>
 </head>
 
-<div id="site-header-menu" class="site-header-menu">
-<?php if ( has_nav_menu( 'primary' ) ) : ?>
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-    <?php wp_nav_menu(
-        array(
-            'theme_location'  => 'primary',
-            'menu_class'      => 'navbar-nav ml-auto',
-            'menu_id'         => 'main-menu',
-            'walker'          => new Jazz_Walker()
-        )
-    ); ?>
 
+<body <?php body_class(); ?>>
+
+    <!-- ******************* The Navbar Area ******************* -->
+<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+<?php if ( has_nav_menu( 'primary' ) ) : ?>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location'  => 'primary',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarNavDropdown',
+                        'menu_class'      => 'navbar-nav ml-auto',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'depth'           => 2,
+                        'walker'          => new Jazz_Walker(),
+                    )
+                ); ?>
+            </div>
+    </nav><!-- .site-navigation -->
 <?php endif; ?>
+</div>
+<!-- #header-navbar end -->
 
     <h1> Testing custom header and menu/walker</h1>
 

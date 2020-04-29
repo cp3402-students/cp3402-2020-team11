@@ -13,7 +13,7 @@ defined('ABSPATH') || exit;
 
 $jazz_includes = array(
     '/jazz-walker.php',                  // Custom walker for menu.
-    '/enqueue.php',                      // Enqueue scripts and styles.
+    '/jazz-enqueue.php',                      // Enqueue scripts and styles.
 );
 
 foreach ($jazz_includes as $file) {

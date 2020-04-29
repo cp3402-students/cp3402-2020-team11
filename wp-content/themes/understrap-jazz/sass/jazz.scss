@@ -1,5 +1,7 @@
-@import "_colours";
-@import "_fonts";
+
 @import "../../understrap/sass/assets/bootstrap4";      // <-------- Loads Bootstrap4
 @import "../../understrap/sass/understrap/understrap";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 
+@import "_colours";
+@import "_fonts";
+@import "_menus";

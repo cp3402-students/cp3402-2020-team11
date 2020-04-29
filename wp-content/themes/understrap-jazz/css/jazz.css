@@ -1,25 +1,3 @@
-/*Colour palette*/
-:root {
-  /*Black - (text)*/
-  --black: #332208 ;
-  /*Brown - (shadow)*/
-  --brown: #7c3313;
-  /*Light Brown - (menu)*/
-  --lightBrown: #c75f38;
-  /*Red - (headings)*/
-  --red: #e84a25;
-  /*Teal -  (titles)*/
-  --teal: #01a894;
-  /*Yellow -  (links)*/
-  --yellow: #f5ae18;
-  /*Cream - (forms)*/
-  --cream: #fdebc5; }
-
-/*Gradient for background images.*/
-:root {
-  background: #01a894;
-  background: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%); }
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7133,3 +7111,33 @@ a.skip-link {
 
 .navbar h1 {
   font-weight: 400; }
+
+/*Colour palette*/
+:root {
+  /*Black - (text)*/
+  --black: #332208 ;
+  /*Brown - (shadow)*/
+  --brown: #7c3313;
+  /*Light Brown - (menu)*/
+  --lightBrown: #c75f38;
+  /*Red - (headings)*/
+  --red: #e84a25;
+  /*Teal -  (titles)*/
+  --teal: #01a894;
+  /*Yellow -  (links)*/
+  --yellow: #f5ae18;
+  /*Cream - (forms)*/
+  --cream: #fdebc5; }
+
+/*Gradient for background images.*/
+:root {
+  background: #01a894;
+  background: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%); }
+
+.menu-item-odd {
+  background-color: white;
+  text-decoration-color: var(--black); }
+
+.menu-item-even {
+  background-color: var(--black);
+  text-decoration-color: white; }
