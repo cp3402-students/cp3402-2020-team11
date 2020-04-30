@@ -2,7 +2,7 @@
 
 :root{
   /*Black - (text)*/
-  --black: #332208 ;
+  --black: #332208;
 
   /*Brown - (shadow)*/
   --brown: #7c3313;
@@ -21,6 +21,12 @@
 
   /*Cream - (forms)*/
   --cream: #fdebc5;
+
+  /*Primary color*/
+  --primary: #332208;
+
+  /*Secondary color*/
+  --secondary: #f5ae18;
 }
 
 /*Gradient for background images.*/
@@ -30,6 +36,4 @@
 //  background: linear-gradient(0deg, rgba(1,168,148,1) 0%, rgba(245,174,24,1) 12%, rgba(232,74,37,1) 57%, rgba(124,51,19,1) 100%);
 //}
 
-$primary: linear-gradient(0deg, rgba(1,168,148,1) 0%, rgba(245,174,24,1) 12%, rgba(232,74,37,1) 57%, rgba(124,51,19,1) 100%);
-$brand-primary: linear-gradient(0deg, rgba(1,168,148,1) 0%, rgba(245,174,24,1) 12%, rgba(232,74,37,1) 57%, rgba(124,51,19,1) 100%);
 

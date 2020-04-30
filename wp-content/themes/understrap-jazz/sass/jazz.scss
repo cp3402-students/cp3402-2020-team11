@@ -1,17 +1,11 @@
-
+@import "variables";
 @import "../../understrap/sass/assets/bootstrap4";      // <-------- Loads Bootstrap4
 @import "../../understrap/sass/understrap/understrap";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 
-@import "_colours";
-@import "_fonts";
-@import "_menus";
+@import "colours";
+@import "fonts";
+@import "menus";
+@import "templates";
 
-.btn-primary{
-  color: var(--cream);
-  background-color: var(--brown);
-  border-color: var(--lightBrown);
-}
 
-.bg-primary{
-  background-color: var(--teal);
-}
+

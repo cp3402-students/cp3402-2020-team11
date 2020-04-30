@@ -10,3 +10,15 @@
   background-color: var(--black);
   color: white;
 }
+
+.btn-primary {
+  @extend .btn-warning;
+}
+
+.btn-secondary {
+  @extend  .btn-warning;
+}
+
+.bg-primary{
+  background-color: var(--black) !important;
+}
