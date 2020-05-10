@@ -15,6 +15,9 @@ $headings: $red;
 $titles: $teal;
 $links: $yellow;
 $forms: $cream;
+$buttons: $teal;
+$buttons-border: darken($buttons, 10%);
+$buttons-hover: lighten($buttons, 50%);
 
 
 /*Gradient for background images.*/

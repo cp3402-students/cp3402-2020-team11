@@ -6,20 +6,48 @@
 @import "_fonts";
 @import "_menus";
 
-.btn-primary{
-  color: $cream;
-  background-color: $accent;
-  border-color: $menu;
+
+.btn-primary {
+  color: white;
+  background-color: $buttons;
+  border-color: $buttons-border;
 }
 
+.btn-primary:hover {
+  color: white;
+  background-color: $buttons-hover;
+  border-color: $buttons-border;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem lighten($buttons, 40%);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: white;
+  background-color: darken($buttons, 75%);
+  border-color: darken($buttons-border, 75%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: $buttons;
+  border-color: $buttons-border;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem lighten($buttons, 40%);
+}
+
+
 .btn-secondary {
-  color: $cream;
-  background-color: $accent;
-  border-color: $menu;
+  @extend .btn-primary;
 }
 
 .bg-primary{
-  background-color: $titles !important;
+  background-image: $primary !important;
 }
 
 body {

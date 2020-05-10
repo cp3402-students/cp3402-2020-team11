@@ -4,8 +4,16 @@
   color: black;
 }
 
+.dropdown-item-odd:hover {
+  @extend .dropdown-item-even;
+}
+
 .dropdown-item-even {
   @extend .dropdown-item;
   background-color: black;
   color: white;
+}
+
+.dropdown-item-odd:hover {
+  @extend .dropdown-item-odd;
 }
