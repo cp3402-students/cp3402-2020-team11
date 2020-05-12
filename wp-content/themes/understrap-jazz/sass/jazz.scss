@@ -1,6 +1,7 @@
-
-@import "../../understrap/sass/assets/bootstrap4";      // <-------- Loads Bootstrap4
-@import "../../understrap/sass/understrap/understrap";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../../understrap/sass/assets/bootstrap4";
+// <-------- Loads Bootstrap4
+@import "../../understrap/sass/understrap/understrap";
+// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 
 @import "_colours";
 @import "_fonts";
@@ -11,12 +12,14 @@
   color: white;
   background-color: $buttons;
   border-color: $buttons-border;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
   color: white;
   background-color: $buttons-hover;
   border-color: $buttons-border;
+  text-decoration: none;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -46,7 +49,23 @@
   @extend .btn-primary;
 }
 
-.bg-primary{
+.wp-block-button__link {
+  @extend .btn-primary;
+}
+
+.wp-block-button__link:hover {
+  background: $primary !important;
+}
+
+.is-style-outline .wp-block-button__link {
+  color: $buttons !important;
+}
+
+.is-style-outline .wp-block-button__link:hover {
+  color: black !important;
+}
+
+.bg-primary {
   background-image: $primary !important;
 }
 

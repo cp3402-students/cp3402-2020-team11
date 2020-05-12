@@ -1695,29 +1695,36 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .wp-block-button__link {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .btn-secondary:hover {
+
+.btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .btn-secondary:focus, .btn-primary.focus, .focus.btn-secondary {
+
+.btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
-  .btn-primary.disabled, .disabled.btn-secondary, .btn-primary:disabled, .btn-secondary:disabled {
+
+.btn-primary.disabled, .disabled.btn-secondary, .disabled.wp-block-button__link, .btn-primary:disabled, .btn-secondary:disabled, .wp-block-button__link:disabled {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active,
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .wp-block-button__link:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active, .wp-block-button__link:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle,
-  .show > .dropdown-toggle.btn-secondary {
+.show > .dropdown-toggle.btn-secondary,
+.show > .dropdown-toggle.wp-block-button__link {
     color: #fff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .wp-block-button__link:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .wp-block-button__link:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus,
-    .show > .dropdown-toggle.btn-secondary:focus {
+.show > .dropdown-toggle.btn-secondary:focus,
+.show > .dropdown-toggle.wp-block-button__link:focus {
       box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 .btn-secondary {
@@ -7126,35 +7133,53 @@ a.skip-link {
   background-color: black;
   color: white; }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .wp-block-button__link {
   color: white;
   background-color: #01a894;
-  border-color: #017567; }
+  border-color: #017567;
+  text-decoration: none;
+}
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
   color: white;
   background-color: #aafef4;
-  border-color: #017567; }
+  border-color: #017567;
+  text-decoration: none;
+}
 
-.btn-primary:focus, .btn-secondary:focus, .btn-primary.focus, .focus.btn-secondary {
+.btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
   box-shadow: 0 0 0 0.2rem #77feee; }
 
-.btn-primary.disabled, .disabled.btn-secondary, .btn-primary:disabled, .btn-secondary:disabled {
+.btn-primary.disabled, .disabled.btn-secondary, .disabled.wp-block-button__link, .btn-primary:disabled, .btn-secondary:disabled, .wp-block-button__link:disabled {
   color: white;
   background-color: black;
   border-color: black; }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .wp-block-button__link:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active, .wp-block-button__link:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle,
-.show > .dropdown-toggle.btn-secondary {
+.show > .dropdown-toggle.btn-secondary,
+.show > .dropdown-toggle.wp-block-button__link {
   color: white;
   background-color: #01a894;
   border-color: #017567; }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .wp-block-button__link:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .wp-block-button__link:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus,
-.show > .dropdown-toggle.btn-secondary:focus {
+.show > .dropdown-toggle.btn-secondary:focus,
+.show > .dropdown-toggle.wp-block-button__link:focus {
   box-shadow: 0 0 0 0.2rem #77feee; }
+
+.wp-block-button__link:hover {
+  background: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%) !important;
+}
+
+.is-style-outline .wp-block-button__link {
+  color: #01a894 !important;
+}
+
+.is-style-outline .wp-block-button__link:hover {
+  color: black !important;
+}
 
 .bg-primary {
   background-image: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%) !important; }
