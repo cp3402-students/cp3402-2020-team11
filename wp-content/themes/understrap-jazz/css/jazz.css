@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7129,44 +7130,45 @@ a.skip-link {
 /*Colour Vars*/
 /*Gradient for background images.*/
 .dropdown-item, .dropdown-item-odd, .dropdown-item-even {
-    color: #000000;
-    padding: 40px 20px;
-    font-size: large;
-    border-right: 1px solid #acacac;
-    border-bottom: 3px solid #ffffff;
-    transition: 0.6s all;
+  color: #000000;
+  padding: 40px 20px;
+  font-size: large;
+  border-right: 1px solid #acacac;
+  border-bottom: 3px solid #ffffff;
+  transition: 0.6s all;
 }
 
 .dropdown-item:hover, .dropdown-item-odd:hover, .dropdown-item-even:hover {
-    border-bottom: 3px solid #f5ae18;
+  border-bottom: 3px solid #f5ae18;
 }
 
 .dropdown-item:active, .dropdown-item-odd:active, .dropdown-item-even:active {
-    color: #f5ae18;
-    background-color: #fdf3dc;
-    transition: 0.4s background-color;
+  color: #f5ae18;
+  background-color: #fdf3dc;
+  transition: 0.4s background-color;
 }
 
 #navbarNavDropdown {
-    height: 100%;
+  height: 100%;
 }
 
 #main-menu {
-    min-height: 100px;
+  min-height: 100px;
 }
 
 .btn-primary, .btn-secondary, .wp-block-button__link {
   color: white;
   background-color: #01a894;
   border-color: #017567;
-    text-decoration: none;
+  text-decoration: none;
+  transition: 0.6s all;
 }
 
 .btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
-  color: white;
+  color: #131313;
   background-color: #aafef4;
   border-color: #017567;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
@@ -7192,59 +7194,60 @@ a.skip-link {
   box-shadow: 0 0 0 0.2rem #77feee; }
 
 .wp-block-button__link:hover {
-    background: grey !important;
+  color: #131313 !important;
+  background: #aafef4 !important;
 }
 
 .is-style-outline .wp-block-button__link {
-    color: #01a894 !important;
+  color: #01a894 !important;
 }
 
 .is-style-outline .wp-block-button__link:hover {
-    color: black !important;
+  color: black !important;
 }
 
 .bg-primary {
-    background: #ffffff !important;
+  background: #ffffff !important;
 }
 
 body {
-    color: #ffffff;
-    background: #131313;
+  color: #ffffff;
+  background: #131313;
   font-family: "Roboto", sans-serif; }
 
 h1 {
-    color: #f5ae18;
+  color: #f5ae18;
   font-family: "Arima Madurai", cursive, serif; }
 
 h2, h3, h4, h5 {
-    color: #d19109;
+  color: #d19109;
   font-family: "Arima Madurai", cursive, serif; }
 
 a {
-    color: #01a894;
+  color: #01a894;
   font-family: "Roboto", sans-serif; }
 
 p {
-    color: #ffffff;
+  color: #ffffff;
   font-family: "Roboto", sans-serif; }
 
 hr {
-    border-top-color: #f5ae18;
+  border-top-color: #f5ae18;
 }
 
 pre {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 code {
-    color: #e84a25;
+  color: #e84a25;
 }
 
 .parallax-hero {
-    background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -12,10 +12,11 @@
   background-color: $buttons;
   border-color: $buttons-border;
   text-decoration: none;
+  transition: 0.6s all;
 }
 
 .btn-primary:hover {
-  color: white;
+  color: $background;
   background-color: $buttons-hover;
   border-color: $buttons-border;
   text-decoration: none;
@@ -53,7 +54,8 @@
 }
 
 .wp-block-button__link:hover {
-  background: grey !important;
+  color: $background !important;
+  background: $buttons-hover !important;
 }
 
 .is-style-outline .wp-block-button__link {
