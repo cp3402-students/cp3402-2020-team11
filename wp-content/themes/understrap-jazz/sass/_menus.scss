@@ -1,19 +1,40 @@
-.dropdown-item-odd {
-  @extend .dropdown-item;
-  background-color: white;
-  color: black;
+@import "colours";
+@import "fonts";
+
+$full-height: 100%;
+
+
+.dropdown-item {
+  color: $black;
+  padding: 40px 20px;
+  font-size: large;
+  border-right: 1px solid lighten($background, 60%);
+  border-bottom: 3px solid $white;
+  transition: 0.6s all;
 }
 
-.dropdown-item-odd:hover {
-  @extend .dropdown-item-even;
+.dropdown-item:hover {
+  border-bottom: 3px solid $menu;
+}
+
+.dropdown-item:active {
+  color: $menu;
+  background-color: lighten($menu, 40%);
+  transition: 0.4s background-color;
+}
+
+.dropdown-item-odd {
+  @extend .dropdown-item;
 }
 
 .dropdown-item-even {
   @extend .dropdown-item;
-  background-color: black;
-  color: white;
 }
 
-.dropdown-item-odd:hover {
-  @extend .dropdown-item-odd;
+#navbarNavDropdown {
+  height: $full-height;
+}
+
+#main-menu {
+  min-height: 100px;
 }

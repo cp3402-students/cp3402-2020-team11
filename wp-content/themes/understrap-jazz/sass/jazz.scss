@@ -2,7 +2,6 @@
 // <-------- Loads Bootstrap4
 @import "../../understrap/sass/understrap/understrap";
 // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
-
 @import "_colours";
 @import "_fonts";
 @import "_menus";
@@ -54,7 +53,7 @@
 }
 
 .wp-block-button__link:hover {
-  background: $primary !important;
+  background: grey !important;
 }
 
 .is-style-outline .wp-block-button__link {
@@ -66,10 +65,12 @@
 }
 
 .bg-primary {
-  background-image: $primary !important;
+  background: $white !important;
 }
 
 body {
+  color: $text;
+  background: $background;
   font-family: $font-main;
 }
 
@@ -91,4 +92,28 @@ a {
 p {
   color: $text;
   font-family: $font-main;
+}
+
+hr {
+  border-top-color: $titles;
+}
+
+pre {
+  color: $text;
+}
+
+code {
+  color: $red;
+}
+
+//TODO allow for custom image
+.parallax-hero {
+  background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
+
+  height: 300px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

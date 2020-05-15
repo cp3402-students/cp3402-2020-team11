@@ -2275,7 +2275,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   border-top: 1px solid #e9ecef; }
 
-.dropdown-item, .dropdown-item-odd, .dropdown-item-odd:hover, .dropdown-item-even {
+.dropdown-item, .dropdown-item-odd, .dropdown-item-even {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -7125,26 +7125,48 @@ a.skip-link {
 /*Colour palette*/
 /*Colour Vars*/
 /*Gradient for background images.*/
-.dropdown-item-odd, .dropdown-item-odd:hover {
-  background-color: white;
-  color: black; }
+/*Colour palette*/
+/*Colour Vars*/
+/*Gradient for background images.*/
+.dropdown-item, .dropdown-item-odd, .dropdown-item-even {
+    color: #000000;
+    padding: 40px 20px;
+    font-size: large;
+    border-right: 1px solid #acacac;
+    border-bottom: 3px solid #ffffff;
+    transition: 0.6s all;
+}
 
-.dropdown-item-even, .dropdown-item-odd:hover {
-  background-color: black;
-  color: white; }
+.dropdown-item:hover, .dropdown-item-odd:hover, .dropdown-item-even:hover {
+    border-bottom: 3px solid #f5ae18;
+}
+
+.dropdown-item:active, .dropdown-item-odd:active, .dropdown-item-even:active {
+    color: #f5ae18;
+    background-color: #fdf3dc;
+    transition: 0.4s background-color;
+}
+
+#navbarNavDropdown {
+    height: 100%;
+}
+
+#main-menu {
+    min-height: 100px;
+}
 
 .btn-primary, .btn-secondary, .wp-block-button__link {
   color: white;
   background-color: #01a894;
   border-color: #017567;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
   color: white;
   background-color: #aafef4;
   border-color: #017567;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
@@ -7170,35 +7192,59 @@ a.skip-link {
   box-shadow: 0 0 0 0.2rem #77feee; }
 
 .wp-block-button__link:hover {
-  background: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%) !important;
+    background: grey !important;
 }
 
 .is-style-outline .wp-block-button__link {
-  color: #01a894 !important;
+    color: #01a894 !important;
 }
 
 .is-style-outline .wp-block-button__link:hover {
-  color: black !important;
+    color: black !important;
 }
 
 .bg-primary {
-  background-image: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%) !important; }
+    background: #ffffff !important;
+}
 
 body {
+    color: #ffffff;
+    background: #131313;
   font-family: "Roboto", sans-serif; }
 
 h1 {
-  color: #01a894;
+    color: #f5ae18;
   font-family: "Arima Madurai", cursive, serif; }
 
 h2, h3, h4, h5 {
-  color: #e84a25;
+    color: #d19109;
   font-family: "Arima Madurai", cursive, serif; }
 
 a {
-  color: #f5ae18;
+    color: #01a894;
   font-family: "Roboto", sans-serif; }
 
 p {
-  color: #332208;
+    color: #ffffff;
   font-family: "Roboto", sans-serif; }
+
+hr {
+    border-top-color: #f5ae18;
+}
+
+pre {
+    color: #ffffff;
+}
+
+code {
+    color: #e84a25;
+}
+
+.parallax-hero {
+    background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
