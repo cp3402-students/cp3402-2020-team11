@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -1695,29 +1696,36 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .wp-block-button__link {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .btn-secondary:hover {
+
+.btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .btn-secondary:focus, .btn-primary.focus, .focus.btn-secondary {
+
+.btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
-  .btn-primary.disabled, .disabled.btn-secondary, .btn-primary:disabled, .btn-secondary:disabled {
+
+.btn-primary.disabled, .disabled.btn-secondary, .disabled.wp-block-button__link, .btn-primary:disabled, .btn-secondary:disabled, .wp-block-button__link:disabled {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active,
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .wp-block-button__link:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active, .wp-block-button__link:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle,
-  .show > .dropdown-toggle.btn-secondary {
+.show > .dropdown-toggle.btn-secondary,
+.show > .dropdown-toggle.wp-block-button__link {
     color: #fff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .wp-block-button__link:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .wp-block-button__link:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus,
-    .show > .dropdown-toggle.btn-secondary:focus {
+.show > .dropdown-toggle.btn-secondary:focus,
+.show > .dropdown-toggle.wp-block-button__link:focus {
       box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 .btn-secondary {
@@ -2268,7 +2276,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   border-top: 1px solid #e9ecef; }
 
-.dropdown-item, .dropdown-item-odd, .dropdown-item-odd:hover, .dropdown-item-even {
+.dropdown-item, .dropdown-item-odd, .dropdown-item-even {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -7118,62 +7126,128 @@ a.skip-link {
 /*Colour palette*/
 /*Colour Vars*/
 /*Gradient for background images.*/
-.dropdown-item-odd, .dropdown-item-odd:hover {
-  background-color: white;
-  color: black; }
+/*Colour palette*/
+/*Colour Vars*/
+/*Gradient for background images.*/
+.dropdown-item, .dropdown-item-odd, .dropdown-item-even {
+  color: #000000;
+  padding: 40px 20px;
+  font-size: large;
+  border-right: 1px solid #acacac;
+  border-bottom: 3px solid #ffffff;
+  transition: 0.6s all;
+}
 
-.dropdown-item-even, .dropdown-item-odd:hover {
-  background-color: black;
-  color: white; }
+.dropdown-item:hover, .dropdown-item-odd:hover, .dropdown-item-even:hover {
+  border-bottom: 3px solid #f5ae18;
+}
 
-.btn-primary, .btn-secondary {
+.dropdown-item:active, .dropdown-item-odd:active, .dropdown-item-even:active {
+  color: #f5ae18;
+  background-color: #fdf3dc;
+  transition: 0.4s background-color;
+}
+
+#navbarNavDropdown {
+  height: 100%;
+}
+
+#main-menu {
+  min-height: 100px;
+}
+
+.btn-primary, .btn-secondary, .wp-block-button__link {
   color: white;
   background-color: #01a894;
-  border-color: #017567; }
+  border-color: #017567;
+  text-decoration: none;
+  transition: 0.6s all;
+}
 
-.btn-primary:hover, .btn-secondary:hover {
-  color: white;
+.btn-primary:hover, .btn-secondary:hover, .wp-block-button__link:hover {
+  color: #131313;
   background-color: #aafef4;
-  border-color: #017567; }
+  border-color: #017567;
+  text-decoration: none;
+}
 
-.btn-primary:focus, .btn-secondary:focus, .btn-primary.focus, .focus.btn-secondary {
+.btn-primary:focus, .btn-secondary:focus, .wp-block-button__link:focus, .btn-primary.focus, .focus.btn-secondary, .focus.wp-block-button__link {
   box-shadow: 0 0 0 0.2rem #77feee; }
 
-.btn-primary.disabled, .disabled.btn-secondary, .btn-primary:disabled, .btn-secondary:disabled {
+.btn-primary.disabled, .disabled.btn-secondary, .disabled.wp-block-button__link, .btn-primary:disabled, .btn-secondary:disabled, .wp-block-button__link:disabled {
   color: white;
   background-color: black;
   border-color: black; }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):active, .wp-block-button__link:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled).active, .wp-block-button__link:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle,
-.show > .dropdown-toggle.btn-secondary {
+.show > .dropdown-toggle.btn-secondary,
+.show > .dropdown-toggle.wp-block-button__link {
   color: white;
   background-color: #01a894;
   border-color: #017567; }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .wp-block-button__link:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .wp-block-button__link:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus,
-.show > .dropdown-toggle.btn-secondary:focus {
+.show > .dropdown-toggle.btn-secondary:focus,
+.show > .dropdown-toggle.wp-block-button__link:focus {
   box-shadow: 0 0 0 0.2rem #77feee; }
 
+.wp-block-button__link:hover {
+  color: #131313 !important;
+  background: #aafef4 !important;
+}
+
+.is-style-outline .wp-block-button__link {
+  color: #01a894 !important;
+}
+
+.is-style-outline .wp-block-button__link:hover {
+  color: black !important;
+}
+
 .bg-primary {
-  background-image: linear-gradient(0deg, #01a894 0%, #f5ae18 12%, #e84a25 57%, #7c3313 100%) !important; }
+  background: #ffffff !important;
+}
 
 body {
+  color: #ffffff;
+  background: #131313;
   font-family: "Roboto", sans-serif; }
 
 h1 {
-  color: #01a894;
+  color: #f5ae18;
   font-family: "Arima Madurai", cursive, serif; }
 
 h2, h3, h4, h5 {
-  color: #e84a25;
+  color: #d19109;
   font-family: "Arima Madurai", cursive, serif; }
 
 a {
-  color: #f5ae18;
+  color: #01a894;
   font-family: "Roboto", sans-serif; }
 
 p {
-  color: #332208;
+  color: #ffffff;
   font-family: "Roboto", sans-serif; }
+
+hr {
+  border-top-color: #f5ae18;
+}
+
+pre {
+  color: #ffffff;
+}
+
+code {
+  color: #e84a25;
+}
+
+.parallax-hero {
+  background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

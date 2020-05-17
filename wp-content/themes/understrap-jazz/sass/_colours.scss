@@ -1,21 +1,25 @@
 /*Colour palette*/
-$black: #332208;
+$black: #000000;
+$dark-gray: #131313;
+$dark-brown: #332208;
 $brown: #7c3313;
-$lightBrown: #c75f38;
+$light-brown: #c75f38;
 $red: #e84a25;
 $teal: #01a894;
 $yellow: #f5ae18;
 $cream: #fdebc5;
+$white: #ffffff;
 
 /*Colour Vars*/
-$text: $black;
-$accent: $brown;
-$menu: $lightBrown;
-$headings: $red;
-$titles: $teal;
-$links: $yellow;
+$text: $white;
+$accent: $light-brown;
+$menu: $yellow;
+$titles: $yellow;
+$headings: darken($titles, 10%);
+$links: $teal;
 $forms: $cream;
 $buttons: $teal;
+$background: $dark-gray;
 $buttons-border: darken($buttons, 10%);
 $buttons-hover: lighten($buttons, 50%);
 
