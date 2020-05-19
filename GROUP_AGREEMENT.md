@@ -36,7 +36,7 @@ If a team member is not working effectively, the team will bring any problems in
 
 **Matthew Rooke:** Visual design, graphics and leadership.
 
-**Robert Sinclair:** Indepth brainsorming, leardership and Shell control.
+**Robert Sinclair:** Indepth brainstorming, leadership and Shell control.
 
 # Challenges
 - Members not attending meetings and pracs.
