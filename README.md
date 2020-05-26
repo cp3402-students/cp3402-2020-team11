@@ -27,3 +27,24 @@ Keep media uploads organised with this file system. For how to use: [See documen
 ### Triple T Radio
 To add a embedded Triple T banner just add a *custom HTML* block and paste in the code generated from the Triple T website. 
 Just click the share button.
+
+### Server
+- Staging Address: http://34.87.236.236/stage/
+- Production Address: http://34.87.236.236/prod/
+- Ubuntu 16.04 hosted on a Google Cloud IAAS Computer Engine Instance.
+- PHP Version 7.0.33
+- Apache 2.4.18
+- MySQL 5.7.30
+
+### Workflow
+- Collbaoration tools: Slack, GitHub Projects, Discord
+- Development tools: PhpStorm, Git, Gulp.js, Bootstrap, WinScp, PhpMyAdmin
+
+### Wordpress
+- Version 5.4
+- Theme Understrap Jazz
+
+### Theme Installation
+- Install Wordpress 
+- Copy theme directory to wp-content/themes.
+- Login to Wordpress and select the Understrap-Jazz theme.
