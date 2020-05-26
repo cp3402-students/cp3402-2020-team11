@@ -24,3 +24,6 @@ Keep media uploads organised with this file system. For how to use: [See documen
 
 - *photos* - all site photo content.
 - *branding* - logos and branding for the site, email, facebook, triple t radio and youtube.
+### Triple T Radio
+To add a embedded Triple T banner just add a *custom HTML* block and paste in the code generated from the Triple T website. 
+Just click the share button.
