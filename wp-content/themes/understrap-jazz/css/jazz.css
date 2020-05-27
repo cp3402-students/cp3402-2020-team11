@@ -7216,11 +7216,11 @@ body {
   font-family: "Roboto", sans-serif; }
 
 h1 {
-  color: #e84a25;
+  color: #f5ae18;
   font-family: "Arima Madurai", cursive, serif; }
 
 h2, h3, h4, h5 {
-  color: #c53615;
+  color: #d19109;
   font-family: "Arima Madurai", cursive, serif; }
 
 a {
@@ -7232,7 +7232,7 @@ p {
   font-family: "Roboto", sans-serif; }
 
 hr {
-  border-top-color: #e84a25;
+  border-top-color: #f5ae18;
 }
 
 pre {
@@ -7244,7 +7244,7 @@ code {
 }
 
 .parallax-hero {
-  background-image: url("hero_paralax.jpg");
+  background-image: url("https://storage.needpix.com/rsynced_images/townsville-marina-2767145_1280.jpg");
   height: 300px;
   background-attachment: fixed;
   background-position: center;
