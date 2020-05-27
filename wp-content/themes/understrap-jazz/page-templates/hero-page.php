@@ -19,7 +19,6 @@ $container = get_theme_mod('understrap_container_type');
 <?php get_template_part('global-templates/hero'); ?>
 
 <!-- Paralax Container element -->
-<!--TODO allow for custom image-->
 <div class="parallax-hero"></div>
 
 <div style="z-index: 21" class="wrapper" id="page-wrapper">
