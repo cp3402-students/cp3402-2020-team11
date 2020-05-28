@@ -108,11 +108,10 @@ code {
   color: $red;
 }
 
+//TODO allow for custom image
 .parallax-hero {
   background-image: url("../hero_paralax.jpg");
-
   height: 300px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
