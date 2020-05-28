@@ -46,7 +46,7 @@ add_filter('the_content', 'last_updated_date');
                     <div class="site-info">
 
                         <p>&copy <?php echo($bloginfo);
-                            echo last_updated_date() ?></p> <!-- TODO include link to privacy policy-->
+                            echo last_updated_date() ?></p>
 
                     </div><!-- .site-info -->
 
