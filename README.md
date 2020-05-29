@@ -10,8 +10,11 @@ A smooth and dark theme for WordPress that accentuates jazz music vibes. Perfect
 - MySQL 5.7.30
 
 ## Workflow
-- Collbaoration tools: Slack, GitHub Projects, Discord
+- Collaboration tools: Slack, GitHub Projects, Discord
 - Development tools: PhpStorm, Git, Gulp.js, Bootstrap, WinScp, PhpMyAdmin
+- SCSS and Gulp to increase workflow: SCSS and Gulp was used as many features and tools such as variables, nestins and inheritance allow greatly increased workflow which makes writing CSS become much less time consuming. Compiling the files to CSS is automated with Gulp.
+- Database Migration: Migrating Data is done through two easy steps of importing and exporting through wordpress also keeping the workflow process lightweight and efficient.
+
 
 ### Wordpress
 - Version 5.4
