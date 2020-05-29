@@ -25,7 +25,7 @@ Be sure to install or already be using [WordPress](https://wordpress.org/downloa
 - Copy the /understrap-jazz theme directory to wp-content/themes inside your WordPress installation directory.
 - Login to WordPress and select the Understrap-Jazz theme.
 #### With our Install Zip
-- Download and extract our ready made [zip file](NEED LINK! "Download") to wp-content/themes inside your WordPress installation directory.
+- Download and extract our ready made [theme_install.zip](https://github.com/cp3402-students/cp3402-2020-team11/raw/stage/theme_install.zip "Download") to wp-content/themes inside your WordPress installation directory.
 - Login to WordPress and select the Understrap-Jazz theme.
 
 ## Creating Site Content
